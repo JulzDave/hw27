@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .forms{
+        padding: 50px;
+    }
+    #form1{
+        float: left;
+        background: black;
+        color: white;
+        width: 309px;
+        height: 213px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    #form2{
+        float:left;
+        background: white;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #cont{
+        display: block;
+        margin: auto;
+        width: 845px;
+        margin-top: 175px;
+    }
+    body{
+        background: gray;
+        font-family: monospace;
+
+    }
+    #header{
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: -100px;
+        position: relative;
+        right: 63px;
+
+    }
+</style>
+</head>
+
+<body>
+    <h1 id='header'>Node.JS w/ Express <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System login interface</h1>
+    <div id="cont">
+        <div id="form1" class="forms">
+            <h2>New user? Sign in now:</h2>
+            <form action="/saveuser" method="post">
+                <input type="text" name="username" placeholder="username"><br />
+                <input type="password" name="password" placeholder="password"><br />
+                <input type="number" name="budget" placeholder="budget"><br /><br />
+                <input type="submit" value="Sign In">
+            </form><br /><br />
+        </div>
+        <div id="form2" class="forms">
+            <h2>Already a user? Please log in:</h2>
+            <form action="/loguser" method="post">
+                <input type="text" name="logUsername" placeholder="username"><br />
+                <input type="password" name="logPassword" placeholder="password"><br /><br /><br />
+                <input type="submit" value="Log In">
+            </form><br /><br /><br /><br />
+        </div>
+    </div>
+    <!-- <button onclick="location.href ='/members'">members</button> -->
+</body>
+
+</html>
